@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+<head>
+    <title>Symbiosis Staffing</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/upload.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/slide.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/fade.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/carousel.css">
+    <script src="javascripts/validation.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="top-header">
+        <div class="container">
+            <div class="row">
+                <div class="top-social hidden-md text-center col-md-4">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+                <div class="top-info col-md-8">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-sign-in"></i>Careers</a></li>
+                        <li><a href="#"><i class="fa fa-phone">Contact:+1 307-222-2805</i></a></li>
+                        <li><a href="mailto:info@Symbiosisstaffing.com"><i class="fa fa-envelope">info@Symbiosisstaffing.com</i></a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#myModal1">Upload Resume</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="myModal1" class="modal fade uploadForm">
+        <div class="modal-dialog form-content">
+            <h1>Upload Your Resume</h1>
+            <form name="upload" onsubmit="return formValidation()">
+                <input type="text" id="name" name="name" placeholder="Name*">
+                <p id="nameError" class="error" style="display:none;"></p>
+                <input type="email" id="email" name="email" placeholder="Email*">
+                <p id="emailError" class="error" style="display:none;"></p>
+                <input type="text" id="phone" placeholder="Contat*">
+                <p id="phoneError" class="error" style="display:none;"></p>
+                <input type="file" id="file">
+                <p id="fileError" class="error" style="display:none;"></p>
+                <input type="checkbox" name="checkbox" id="terms">
+                <i> </i>I agree to Terms and Conditions.
+                <div>
+                    <input type="submit" value="Send" id="send">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="header">
+        <div class="container">
+            <div class=" col-md-2">
+                <img class="logo-img" src="images/logo.png">
+            </div>
+            <div class="navmenu  col-md-10">
+                <ul class="nav-menu">
+                    <li><a href="index">Home</a></li>
+                    <li><a href="about">About Us</a></li>
+                    <li><a href="services">Services</a></li>
+                    <li><a href="career">Careers</a></li>
+                    <li><a href="industry">Industry Focus</a></li>
+                    <li><a href="blog">Blog</a></li>
+                    <li><a href="contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="about-image">
+            <img src="images/services.jpg">
+        </div>
+    </div>
+    <div class="services">
+        <div class="container">
+            <div class="row">
+                <div class=" col-md-8">
+                    <h1>Our Services</h1>
+                    <div class="service-content">
+                        <p>Recruitment as function is becoming challenging every day with dynamic change in business demand
+                            and short supply of talent fitting into business need, the task of hiring the right talent at
+                            right time at desired location is the most challenging and herculean task</p>
+                    </div>
+                    <div class="services-list">
+                        <div class="it-services">
+                            <span><h3>IT Services</h3></span>
+                            <p>
+                                We offer Outsourced services in the field of IT and across various technological domains such as:
+                            </p>
+                            <ul>
+                                <li>Mainframes</li>
+                                <li>Internet/E-commerce</li>
+                                <li>System Software</li>
+                                <li>O/S Internals</li>
+                                <li>Telecom</li>
+                                <li>Embedded Software</li>
+                                <li>Data Warehousing</li>
+                                <li>CRM</li>
+                                <li>Enterprise resource planning &amp; System Administration</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <br><br>
+                    <div class="contactForm">
+                        <div class="contant-information">
+                            <h3>For business Enquiries:</h3>
+                            <form id="gform" action="https://script.google.com/macros/s/AKfycbzSeNTJeq1l4JdvOHVOLzvkM27vbVmfke5VDzHjyGFysmG1HNg/exec"
+                            method="GET" name="enquiry" onsubmit="return validation()">
+                            <input type="text" name="name" class="form-control" id="person_name" placeholder="Name*">
+                            <p id="personError" class="error" style="display:none;"></p>
+                            <input type="text" name="company" class="form-control" id="company_name" placeholder="Company Name*">
+                            <p id="companyError" class="error" style="display:none;"></p>
+                            <input type="email" name="contact_email" class="form-control" id="email-invalid" placeholder="Email*">
+                            <p id="mailError" class="error" style="display:none;"></p>
+                            <input type="text" name="contact_phone" class="form-control" id="contact_no" placeholder="Contact*">
+                            <p id="contactError" class="error" style="display:none;"></p>
+                            <input type="text" name="designation" class="form-control" id="designation" placeholder="Designation*">
+                            <p id="designationError" class="error" style="display:none;"></p>
+                            <textarea name="comment" id="comment" class="form-control" placeholder="Comment*" rows="3" cols="5"></textarea>
+                            <p id="commentError" class="error" style="display:none;"></p>
+                            <div>
+                                <input type="submit" value="Submit" style="margin-top:16px;text-align:center;">
+                            </div>
+                        </form>
+                        </div>
+                    </div>
+                    <div style="display:none;" id="thankyou_message">
+                <h2><em>Thanks</em> for contacting us! We will get back you soon</h2>
+            </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <span><h3>Corporate Training</h3></span>
+                <p>We offer various corporate training solutions including Personality Development Training, Communications
+                    and Inter-personal skills, Practical skills and Knowledge Development are a few of the many corporate
+                    trainings we conduct on a regular basis. Our tutors are experts in their respective fields with years
+                    of experience and knowledge.</p>
+            </div>
+            <div class="col-md-6">
+                <h3>Staffing Solutions</h3>
+                <p>With solutions in permanent staffing as well as contract-to-hire (temporary staffing), our multi-level screening
+                    and assessment process ensures that only the best candidate is employed. Our consultants and recruitment
+                    staff are experts in multiple domains to service all of your needs. </p>
+                <p>
+                    Our solutions are:
+                </p>
+                <ul>
+                    <li>Permanent Staffing</li>
+                    <li>Contingent Staffing (Contract and Contract-hire)</li>
+                    <li>Statement of Work (SOW)</li>
+                </ul>
+                <p></p>
+
+            </div>
+            <div class="col-md-6">
+                <span><h3>Talent Mapping</h3></span>
+                <p>Symbiosis Network is capable of providing Talent mapping services globally. We are supporting our clients
+                    in identifying talents according to their set criteria and profiling them. Profiling the talent identified
+                    and building the network can only be done by countless conversations and a healthy relationship that
+                    goes well beyond the first approach. For companies, Talent Mapping is indeed a challenging task for companies
+                    and that is where Symbiosis comes into picture to support.</p>
+            </div>
+            <div class="col-md-6">
+                <span><h3>RPO</h3></span>
+                <p>Symbiosis's RPO program broadens your options for finding and managing talent, forecasting workforce needs,
+                    and balancing headcount to meet business demand. The goal of our RPO approach is to deliver to your business
+                    ambitions and realize your current and future strategic vision. Our typical engagement involves helping
+                    a company fill between 100 and 10,000 jobs a year. We help clients transform their hiring practices into
+                    a strategic weapon for their business, and we do it in a wide variety of ways.</p>
+                <div class="col-md-6">
+                    <ul>
+                        <li>IT Staffing</li>
+                        <li>Engineering/Automative</li>
+                        <li>Manufacturing Staffing</li>
+                        <li>Sciences Staffing</li>
+                        <li>Administrative/Clerical</li>
+                        <li>Architecture Staffing</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul>
+                        <li>Construction Staffing</li>
+                        <li>Call Center Staffing</li>
+                        <li>Accounting Staffing</li>
+                        <li>Scientific/Clinical Staffing</li>
+                        <li>Aviation Staffing</li>
+                        <li>Energy Staffing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="about col-md-4">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index">Home</a></li>
+                        <li><a href="about">About Us</a></li>
+                        <li><a href="services">Services</a></li>
+                        <li><a href="career">Careers</a></li>
+                        <li><a href="industry">Industry Focus</a></li>
+                        <li><a href="blog">Blog</a></li>
+                        <li><a href="contact">Contact</a></li>
+                    </ul>
+
+                </div>
+                <div class="contact col-md-8">
+                    <h3>Contact us</h3>
+                    <div class="contact-icon col-md-6" style="padding:0px;">
+                        <ul style="padding:0px;">
+                            <li><i class="fa fa-map-marker" aria-hidden="true"></i><b>US</b> - 1603 Capitol Ave.,
+                                <span>Suite 310 A411, Cheyenne, </span><span>Wyoming - 82001.</span></li>
+                            <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+13072222805">+1 307-222-2805</a>                                <span> Fax: <a href="fax:+13072227228">+1 307-222-7228</a></span></li>
+                            <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info@symbiosisstaffing.com">info@symbiosisstaffing.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="contact-icon col-md-6">
+                        <ul style="padding:0px;">
+                            <li><i class="fa fa-map-marker" aria-hidden="true"></i><b>India</b> - #541, 2nd Floor,
+                                <span>5th Main, 16th Cross,</span><span>Indiranagar 2nd Stage, </span><span>Bangalore - 38.</span></li>
+                            <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+918042743030">+91 80-42743030/ 41/ 44/ 49</a></li>
+                            <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info@symbiosisstaffing.com">info@symbiosisstaffing.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                Copyright @ 2017
+                <a href="#">Symbiosis Networks</a>
+            </div>
+        </div>
+    </div>
+ <script data-cfasync="false" type="text/javascript" src="javascripts/form-submission-handler.js"></script>
+
+</body>
+
+</html>
+<script>
+    // pop up form
+    var form = document.getElementById('upload');
+    var button = document.getElementById('resume');
+    var span = document.getElementsByClassName("close")[0];
+    button.onclick = function () {
+        form.style.display = "block";
+    }
+    span.onclick = function () {
+        form.style.display = "none";
+    }
+    Window.onclick = function (event) {
+        if (event.target == form) {
+            form.style.display = "none";
+        }
+    }
+    var fs = require('fs');
+
+    fs.open('test.txt', 'w', function (err, file) {
+        if (err) throw err;
+        console.log('Saved!');
+    });
+
+</script>

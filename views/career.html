@@ -1,0 +1,255 @@
+<html>
+
+<head>
+    <title>Symbiosis Staffing</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/upload.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/slide.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/fade.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/carousel.css">
+    <script src="javascripts/validation.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="top-header">
+        <div class="container">
+            <div class="row">
+                <div class="top-social hidden-md text-center col-md-4">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+                <div class="top-info col-md-8">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-sign-in"></i>Careers</a></li>
+                        <li><a href="#"><i class="fa fa-phone">Contact:+1 307-222-2805</i></a></li>
+                        <li><a href="mailto:info@Symbiosisstaffing.com"><i class="fa fa-envelope">info@Symbiosisstaffing.com</i></a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#myModal1">Upload Resume</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="myModal1" class="modal fade uploadForm">
+        <div class="modal-dialog form-content">
+            <h1>Upload Your Resume</h1>
+            <form name="upload" onsubmit="return formValidation()">
+                <input type="text" id="name" name="name" placeholder="Name*">
+                <p id="nameError" class="error" style="display:none;"></p>
+                <input type="email" id="email" name="email" placeholder="Email*">
+                <p id="emailError" class="error" style="display:none;"></p>
+                <input type="text" id="phone" placeholder="Contat*">
+                <p id="phoneError" class="error" style="display:none;"></p>
+                <input type="file" id="file">
+                <p id="fileError" class="error" style="display:none;"></p>
+                <input type="checkbox" name="checkbox" id="terms">
+                <i> </i>I agree to Terms and Conditions.
+                <div>
+                    <input type="submit" value="Send" id="send">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="header">
+        <div class="container">
+            <div class=" col-md-2">
+                <img class="logo-img" src="images/logo.png">
+            </div>
+            <div class="navmenu  col-md-10">
+                <ul class="nav-menu">
+                    <li><a href="index">Home</a></li>
+                    <li><a href="about">About Us</a></li>
+                    <li><a href="services">Services</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="industry">Industry Focus</a></li>
+                    <li><a href="blog">Blog</a></li>
+                    <li><a href="contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="about-image">
+            <img src="images/join-us.jpg">
+        </div>
+    </div>
+    <div class="career">
+        <div class="container">
+            <div class="row">
+                <h1>Career @ Symbiosis</h1>
+                <div class="col-md-5">
+                    <img src="images/career.png">
+                </div>
+                <div class="col-md-7">
+                    <div class="career-content">
+                        <p>Our work culture is a blend of work and play. We are a growth driven organization and every effort
+                            is made to ensure that employees gain multiple opportunities for learning and growing professionally.</p>
+                        <p>With exposure to multiple domains within the organization and an environment which promotes learning
+                            and nurtures the aspirations within every employee, we provide fair and equal opportunities to
+                            all. With utmost transparency, employees are encouraged to go through multiple trainings within
+                            recruitment as well as sharpen their cross domain skills.</p>
+                    </div>
+                    <div class="apply">
+                        <h3>Join Us</h3>
+                        <P>Personalize your Career search and receive tailored news, insights and job alerts. Join our Talent
+                            Connection to learn more about the challenging and rewarding career opportunities offered by
+                            Accenture.
+                        </P>
+                        <div class="apply-button">
+                            <button class="btn" data-toggle="modal" data-target="#myModal1">Apply Here</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div id="myModal1" class="modal fade uploadForm">
+                <div class="modal-dialog form-content">
+                    <h1>Upload Your Resume</h1>
+                    <form name="upload" onsubmit="return formValidation()">
+                        <input type="text" id="name" name="name" placeholder="Name*">
+                        <p id="nameError" class="error" style="display:none;"></p>
+                        <input type="email" id="email" name="email" placeholder="Email*">
+                        <p id="emailError" class="error" style="display:none;"></p>
+                        <input type="text" id="phone" placeholder="Contat*">
+                        <p id="phoneError" class="error" style="display:none;"></p>
+                        <input type="file" id="file">
+                        <p id="fileError" class="error" style="display:none;"></p>
+                        <input type="checkbox" name="checkbox" id="terms">
+                        <i> </i>I agree to Terms and Conditions.
+                        <div>
+                            <input type="submit" value="Send" id="send">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="image-container ">
+                <h1>Why Symbiosis</h1>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="image-outer">
+                            <img src="images/organized.jpg">
+                            <div class="overlay">
+                                <h5>Organized environment</h5>
+                                <p>An unorganized environment can lead to demotivation and productivity loss. At Symbiosis,
+                                    we give priority to organizing everything in our firm. This ensures that all our employees
+                                    are on the same page and are a strong functional workforce.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="image-outer">
+                            <img src="images/fun.jpg">
+                            <div class="overlay">
+                                <h5>Weekly Fun Activities</h5>
+                                <p>Fun is contagious. And thats why, at Symbiosis we blend work with fun with our weekly fun
+                                    activities like Potluck, Birthday Bash, Mock Awards, Creativity Contests, etc. Such activities
+                                    ensure that we lighten up the workplace and we keep the mood up throughout.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="image-outer">
+                            <img src="images/selflearning.jpg">
+                            <div class="overlay">
+                                <h5>Self Learning</h5>
+                                <p>Symbiosis employees are always encouraged to learn and master new skills and we give complete
+                                    support to employees to attend in-house as well as external trainings, be it in-domain
+                                    skillset trainings or cross-domain personal growth trainings.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="image-outer">
+                            <img src="images/community.jpg">
+                            <div class="overlay">
+                                <h5>Symbiosis Community</h5>
+                                <p>Our organization is not just a workplace but a family. We take pride in our sense of community
+                                    where discussions and opinions are openly conveyed and accepted. We believe in the clear
+                                    and open communication structure and that in turn has helped us to grow to a self-sustainable
+                                    environment.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="about col-md-4">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index">Home</a></li>
+                        <li><a href="about">About Us</a></li>
+                        <li><a href="services">Services</a></li>
+                        <li><a href="career">Careers</a></li>
+                        <li><a href="industry">Industry Focus</a></li>
+                        <li><a href="blog">Blog</a></li>
+                        <li><a href="contact">Contact</a></li>
+                    </ul>
+
+                </div>
+                <div class="contact col-md-8">
+                    <h3>Contact us</h3>
+                    <div class="contact-icon col-md-6" style="padding:0px;">
+                        <ul style="padding:0px;">
+                            <li><i class="fa fa-map-marker" aria-hidden="true"></i><b>US</b> - 1603 Capitol Ave.,
+                                <span>Suite 310 A411, Cheyenne, </span><span>Wyoming - 82001.</span></li>
+                            <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+13072222805">+1 307-222-2805</a>                                <span> Fax: <a href="fax:+13072227228">+1 307-222-7228</a></span></li>
+                            <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info@symbiosisstaffing.com">info@symbiosisstaffing.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="contact-icon col-md-6">
+                        <ul style="padding:0px;">
+                            <li><i class="fa fa-map-marker" aria-hidden="true"></i><b>India</b> - #541, 2nd Floor,
+                                <span>5th Main, 16th Cross,</span><span>Indiranagar 2nd Stage, </span><span>Bangalore - 38.</span></li>
+                            <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+918042743030">+91 80-42743030/ 41/ 44/ 49</a></li>
+                            <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info@symbiosisstaffing.com">info@symbiosisstaffing.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                Copyright @ 2017
+                <a href="#">Symbiosis Networks</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<Script>
+    // // pop up form
+    // var form = document.getElementById('upload');
+    // var button = document.getElementById('resume');
+    // var span = document.getElementsByClassName("close")[0];
+    // button.onclick = function () {
+    //     form.style.display = "block";
+    // }
+    // span.onclick = function () {
+    //     form.style.display = "none";
+    // }
+    // Window.onclick = function (event) {
+    //     if (event.target == 'form') {
+    //         form.style.display = "none";
+    //     }
+    // }
+
+</script>

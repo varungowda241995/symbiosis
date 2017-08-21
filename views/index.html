@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+<head>
+    <title>Symbiosis Staffing</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/upload.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/slide.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/fade.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/carousel.css">
+    <script src="javascripts/validation.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body ng-app="">
+    <div class="top-header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="top-social text-center col-sm-3 col-md-3 col-lg-4">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+                <div class="top-info col-sm-9 col-md-9 col-lg-8">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-sign-in"></i>Careers</a></li>
+                        <li><a href="#"><i class="fa fa-phone">Contact:+1 307-222-2805</i></a></li>
+                        <li><a href="mailto:info@Symbiosisstaffing.com"><i class="fa fa-envelope">info@Symbiosisstaffing.com</i></a></li>
+                        <li><a href="#" class="" data-toggle="modal" data-target="#myModal1">Upload Resume</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="myModal1" class="modal fade uploadForm">
+        <div class="modal-dialog form-content">
+            <!-- <div class="form">
+                <div class="uploadform" ng-app="upload" ng-controller="formCtrl"> -->
+            <h1>Upload Your Resume</h1>
+            <form name="upload" onsubmit="return formValidation()">
+                <input type="text" id="name" name="name" placeholder="Name*">
+                <p id="nameError" class="error" style="display:none;"></p>
+                <input type="email" id="email" name="email" placeholder="Email*">
+                <p id="emailError" class="error" style="display:none;"></p>
+                <input type="text" id="phone" placeholder="Contat*">
+                <p id="phoneError" class="error" style="display:none;"></p>
+                <input type="file" name="file" id="file">
+                <p id="fileError" class="error" style="display:none;"></p>
+                <input type="checkbox" name="checkbox" id="terms">
+                <i> </i>I agree to Terms and Conditions.
+                <div>
+                    <input type="submit" value="Send" id="send">
+                </div>
+            </form>
+        </div>
+        <!-- </div>
+        </div> -->
+    </div>
+    <div class="header">
+        <div class="container-fluid">
+            <div class="col-sm-2 col-md-2 col-lg-2">
+                <img class="logo-img" src="images/logo.png">
+            </div>
+            <div class="navmenu ">
+                <ul class="nav-menu" style="float:right;">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="about">About Us</a></li>
+                    <li><a href="services">Services</a></li>
+                    <li><a href="career">Careers</a></li>
+                    <li><a href="industry">Industry Focus</a></li>
+                    <li><a href="blog">Blog</a></li>
+                    <li><a href="contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="slideshow-container">
+            <div class="slides">
+                <ul>
+                    <!-- slides -->
+                    <li><img src="images/slideImage1.jpg" alt="image01" />
+                        <div style="display:inline-flex;">
+                            <img src="images/slide1.jpg" width="100px" height="100px">
+                            <span><h1 style="padding-top:10%;padding-left:25px;line-height:40px;" item-width="50px;">Proven methodology, profound impact<br> and sustainable results.</h1></span>
+                        </div>
+                    </li>
+                    <li><img src="images/slideImage2.jpg" alt="image02" />
+                        <div style="display:inline-flex;">
+                            <img src="images/business.jpg" width="100px" height="100px">
+                            <span><h1 style="padding-top:10%;padding-left:25px;" item-width="50px;">Our Talent Is Finding Yours</P></span>
+                        </div>
+                    </li>
+                    <li><img src="images/slideImage3.jpg" alt="image01" />
+                        <div style="display:inline-flex;">
+                            <img src="images/slide1.jpg" width="100px" height="100px">
+                            <span><h1 style="padding-top:10%;padding-left:25px;line-height:40px;" item-width="50px;">Proven methodology, profound impact<br> and sustainable results.</h1></span>
+                        </div>
+                    </li>
+                    <li><img src="images/slideImage4.jpg" alt="image02" />
+                        <div style="display:inline-flex;">
+                            <img src="images/business2.jpg" width="100px" height="100px">
+                            <span><h1 style="padding-top:10%;padding-left:25px;" item-width="50px;">Our Talent Is Finding Yours</h1></span>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="search" ng-app ng-init="designation=['Account Sales Representative','Call Center Supervisor','Database Architect','Financial Analyst','Information Systems Manager','Legal Secretary'];">
+        <h1>Search Jobs</h1>
+        <form class="form-inline">
+            <input class="input-search" ng-model="curDesignation" placeholder="Keyword">
+            <ul>
+                <li ng-repeat="job in designation | filter:curDesignation">{{job}}</li>
+            </ul>
+
+            <input type="button" class="button" value="Submit">
+        </form>
+    </div> -->
+    <div class="maincontent">
+        <div class="container">
+            <div class="welcome col-md-8">
+                <h1>Welcome to <em>Symbiosis Staffing</em></h1>
+                <p>Symbiosis Staffing was established in 1994 and since then our main objective has been to be the most valued
+                    staffing firm in the market. At the forefront of staffing solutions, Symbiosis Staffing is your starting
+                    place to hire today’s qualified resources. We deliver top-tier workforce solutions across the US region
+                    meeting the demands of all sectors. Symbiosis Staffing will go over the top to provide support to our
+                    clients in fulfilling their project staffing needs and we make sure that the client succeeds in accomplishing
+                    the specific project tasks</p>
+                <div class="enquiry">
+                    <input type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" class="button" value="Send Enquiry">
+                </div>
+                <div id="myModal" class="modal fade enquiryForm">
+                    <div class="modal-dialog enquiry-content">
+                        <div class="form">
+                            <div class="uploadform">
+                                <h1>For Business Enquiry</h1>
+                                <form id="gform" action="https://script.google.com/macros/s/AKfycbzSeNTJeq1l4JdvOHVOLzvkM27vbVmfke5VDzHjyGFysmG1HNg/exec"
+                            method="GET" name="enquiry" onsubmit="return validation()">
+                            <input type="text" name="name" class="form-control" id="person_name" placeholder="Name*">
+                            <p id="personError" class="error" style="display:none;"></p>
+                            <input type="text" name="company" class="form-control" id="company_name" placeholder="Company Name*">
+                            <p id="companyError" class="error" style="display:none;"></p>
+                            <input type="email" name="contact_email" class="form-control" id="email-invalid" placeholder="Email*">
+                            <p id="mailError" class="error" style="display:none;"></p>
+                            <input type="text" name="contact_phone" class="form-control" id="contact_no" placeholder="Contact*">
+                            <p id="contactError" class="error" style="display:none;"></p>
+                            <input type="text" name="designation" class="form-control" id="designation" placeholder="Designation*">
+                            <p id="designationError" class="error" style="display:none;"></p>
+                            <textarea name="comment" id="comment" class="form-control" placeholder="Comment*" rows="3" cols="5"></textarea>
+                            <p id="commentError" class="error" style="display:none;"></p>
+                            <div>
+                                <input type="submit" value="Submit" style="margin-top:16px;text-align:center;">
+                            </div>
+                        </form>
+                            </div>
+                        </div>
+                        <div style="display:none;" id="thankyou_message">
+                <h2><em>Thanks</em> for contacting us! We will get back you soon</h2>
+            </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="welcome">
+                <h2> Our Motive</h2>
+                <div class="scroll col-md-4">
+                    <marquee direction="up" scrolldelay="100">
+                        <ul>
+                            <li>Insightful thinking. Real world solutions</li>
+                            <li>Proven methodology, profound impact, and sustainable results</li>
+                            <li>IT Consulting and Recruitment – simply the right clique</li>
+                        </ul>
+                        <!-- Insightful thinking. Real world solutions
+                        <br><br>Proven methodology, profound impact, and sustainable results
+                        <br><br>IT Consulting and Recruitment – simply the right clique -->
+                    </marquee>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="container inner">
+                <h1>Dedicate to Provide Complete Staffing Solutions</h1>
+                <div class="services">
+                    <div class="container">
+                        <div class="recuirement-img col-md-6">
+                            <img src="images/recuirement.png">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="service">
+                                <h2>Our Services</h2>
+                                <div class="service_list">
+                                    <div class="it_service ">
+                                        <div class="icon">
+                                            <img src="images/it_service.png">
+                                        </div>
+                                        <h4>It Services</h4>
+                                        <p>
+                                            We offer Outsourced services in the field of IT and across various technological domains such as:
+                                        </p>
+                                    </div>
+                                    <div class="it_service ">
+                                        <div class="icon">
+                                            <img src="images/staff.png">
+                                        </div>
+                                        <h4>Staffing Solutions</h4>
+                                        <p>
+                                            We offer Outsourced services in the field of IT and across various technological domains such as:
+                                        </p>
+                                    </div>
+                                    <div class="it_service ">
+                                        <div class="icon ">
+                                            <img src="images/rpo.png">
+                                        </div>
+                                        <h4>RPO</h4>
+                                        <p>
+                                            We offer Outsourced services in the field of IT and across various technological domains such as:
+                                        </p>
+                                    </div>
+                                    <div class="it_service ">
+                                        <div class="icon ">
+                                            <img src="images/corporate.png">
+                                        </div>
+                                        <h4>Corporate Training</h4>
+                                        <p>
+                                            We offer Outsourced services in the field of IT and across various technological domains such as:
+                                        </p>
+                                    </div>
+                                    <div class="it_service ">
+                                        <div class="icon ">
+                                            <img src="images/talent.png">
+                                        </div>
+                                        <h4>Talent Mapping</h4>
+                                        <p>
+                                            We offer Outsourced services in the field of IT and across various technological domains such as:
+                                        </p>
+                                        </disv>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align:center">
+        </div>
+    </div>
+    <div class="case-studies">
+        <div class="container">
+            <h1>Case Studies</h1>
+            <div class="row">
+                <div class="col-md-12" data-wow-delay="0.2s">
+                    <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+
+                        <!-- Carousel Slides / Quotes -->
+                        <div class="carousel-inner text-center">
+
+                            <!-- Quote 1 -->
+                            <div class="item active">
+                                <blockquote>
+                                    <div class="row">
+                                        <div class="col-sm-8 col-sm-offset-2">
+
+                                            <p>An Illinois based Manufacturing Company manufacturing Cables, Wires and Connectors
+                                                wanted an Assistant Manager Purchase and Assistant Manager Assembly. The
+                                                Purchase Manager had to have high level of team management skills to handle
+                                                a team of 30 members. The Assembly Manager had to be skilled in moving the
+                                                technology from automation to Manpower. Our team successfully closed this
+                                                position which was open for some time</p>
+                                        </div>
+                                    </div>
+                                </blockquote>
+                            </div>
+                            <!-- Quote 2 -->
+                            <div class="item">
+                                <blockquote>
+                                    <div class="row">
+                                        <div class="col-sm-8 col-sm-offset-2">
+
+                                            <p>A Canadian based MNC in IT Services required two LEAD ANALYSTS with Skills in
+                                                Terradata, Linux, Solaris, and Network Administration. The Challenge was
+                                                to find these candidates who could join at short notice. Although there are
+                                                more developers with Terradata skillset it was hard to find Administrators
+                                                in Terradata. Our recruiters worked using their entire network and found
+                                                the right candidates and successfully on-boarded both the candidates. Since
+                                                then our team is a preferred vendor for all key positions of this client.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </blockquote>
+                            </div>
+                            <!-- Quote 3 -->
+                            <div class="item">
+                                <blockquote>
+                                    <div class="row">
+                                        <div class="col-sm-8 col-sm-offset-2">
+
+                                            <p>A Global Software Product development services company which is into core engineering
+                                                and IT Consulting services wanted a Lead developer having niche skill with
+                                                the Informatica in Cloud skillset and another Lead Developer having skills
+                                                like Java with SQL database(Like Mongo Db,Couch DB,Cassandra) in Banking
+                                                / Digital e-commerce domains. The challenge was finding a technical Lead
+                                                who was an individual contributor and to get him to join at short notice
+                                                as the project was already on. Our recruiters took on the challenge and sourced
+                                                the best candidate and were successfully On-boarded within 15 days. The client
+                                                appreciated us for closing the position with a quick TAT and within the Salary
+                                                Slab.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </blockquote>
+                            </div>
+                            <div class="item">
+                                <blockquote>
+                                    <div class="row">
+                                        <div class="col-sm-8 col-sm-offset-2">
+
+                                            <p>From one of the globally established organization, we received a requirement
+                                                to fill Technical Writer role. They were looking for a candidate who is sited
+                                                within 10 miles from their branch office location so that he/she can work
+                                                from Remote location and be capable of draw closer to office on a need basis.
+                                                Client was in search of candidate for few months with the support of their
+                                                various Pre-Approved vendors. But they were not able to fill the position
+                                                due to client's low budget on this specific requirement and the remote location.
+                                                We took this up as a real confront and deployed a dedicated Delivery team
+                                                to work on this requirement and our head hunters responded very well by making
+                                                a submission of best qualified candidate's resume after scrutinizing various
+                                                profiles. We have filled that position within 48 hours and the candidate
+                                                has joined within a short period of time.</p>
+                                        </div>
+                                    </div>
+                                </blockquote>
+                            </div>
+                        </div>
+
+                        <!-- Carousel Buttons Next/Prev -->
+                        <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+                        <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="about col-md-4">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index">Home</a></li>
+                        <li><a href="about">About Us</a></li>
+                        <li><a href="services">Services</a></li>
+                        <li><a href="career">Careers</a></li>
+                        <li><a href="industry">Industry Focus</a></li>
+                        <li><a href="blog">Blog</a></li>
+                        <li><a href="contact">Contact</a></li>
+                    </ul>
+
+                </div>
+                <div class="contact col-md-8">
+                    <h3>Contact us</h3>
+                    <div class="contact-icon col-md-6" style="padding:0px;">
+                        <ul style="padding:0px;">
+                            <li><i class="fa fa-map-marker" aria-hidden="true"></i><b>US</b> - 1603 Capitol Ave.,
+                                <span>Suite 310 A411, Cheyenne, </span><span>Wyoming - 82001.</span></li>
+                            <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+13072222805">+1 307-222-2805</a>                                <span> Fax: <a href="fax:+13072227228">+1 307-222-7228</a></span></li>
+                            <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info@symbiosisstaffing.com">info@symbiosisstaffing.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="contact-icon col-md-6">
+                        <ul style="padding:0px;">
+                            <li><i class="fa fa-map-marker" aria-hidden="true"></i><b>India</b> - #541, 2nd Floor,
+                                <span>5th Main, 16th Cross,</span><span>Indiranagar 2nd Stage, </span><span>Bangalore - 38.</span></li>
+                            <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+918042743030">+91 80-42743030/ 41/ 44/ 49</a></li>
+                            <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info@symbiosisstaffing.com">info@symbiosisstaffing.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                Copyright @ 2017
+                <a href="#">Symbiosis Staffing</a>
+            </div>
+        </div>
+    </div>
+
+  <script data-cfasync="false" type="text/javascript" src="javascripts/form-submission-handler.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,212 @@
+<html>
+
+<head>
+    <title>Symbiosis Staffing</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/upload.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/slide.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/fade.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/carousel.css">
+    <script src="javascripts/validation.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="top-header">
+        <div class="container">
+            <div class="row">
+                <div class="top-social hidden-md text-center col-md-4">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+                <div class="top-info col-md-8">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-sign-in"></i>Careers</a></li>
+                        <li><a href="#"><i class="fa fa-phone">Contact:+1 307-222-2805</i></a></li>
+                        <li><a href="mailto:info@Symbiosisstaffing.com"><i class="fa fa-envelope">info@Symbiosisstaffing.com</i></a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#myModal1">Upload Resume</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="myModal1" class="modal fade uploadForm">
+        <div class="modal-dialog form-content">
+            <h1>Upload Your Resume</h1>
+            <form id="" name="upload" onsubmit="return formValidation()">
+                <input type="text" id="name" name="name" placeholder="Name*">
+                <p id="nameError" class="error" style="display:none;"></p>
+                <input type="email" id="email" name="email" placeholder="Email*">
+                <p id="emailError" class="error" style="display:none;"></p>
+                <input type="text" id="phone" placeholder="Contat*">
+                <p id="phoneError" class="error" style="display:none;"></p>
+                <input type="file" id="file">
+                <p id="fileError" class="error" style="display:none;"></p>
+                <input type="checkbox" name="checkbox" id="terms">
+                <i> </i>I agree to Terms and Conditions.
+                <div>
+                    <input type="submit" value="Send" id="send">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="contactnav header">
+        <div class="container">
+            <div class=" col-md-2">
+                <img class="logo-img" src="images/logo.png">
+            </div>
+            <div class="navmenu col-md-10">
+                <ul class="nav-menu">
+                    <li><a href="index">Home</a></li>
+                    <li><a href="about">About Us</a></li>
+                    <li><a href="services">Services</a></li>
+                    <li><a href="career">Careers</a></li>
+                    <li><a href="industry">Industry Focus</a></li>
+                    <li><a href="blog">Blog</a></li>
+                    <li><a href="contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="contactus">
+        <div class="container">
+            <h1> Contact Information</h1>
+            <div class="col-md-7" style="letter-spacing:1px;">
+                <div class="thank">
+                    <p>Thank you for your interest in Symbiosis' services. </p><br>
+                    <p>Please provide the following information about your business needs to help us serve you better. This
+                        information will enable us to route your request to the appropriate person. </p><br>
+                    <p>We will get back to you soon.</p>
+                </div>
+            </div>
+
+
+            <div class=" col-md-5 " style="margin:25px 0px;">
+                <div class="contactForm">
+                    <div class="contant-information">
+                        <h2>For business Enquiries:</h2>
+                        <form id="contactus" action="/contact"
+                            method="POST" name="enquiry" onsubmit="return validation()">
+                            <input type="text" name="name" class="form-control" id="person_name" placeholder="Name*">
+                            <p id="personError" class="error" style="display:none;"></p>
+                            <input type="text" name="company" class="form-control" id="company_name" placeholder="Company Name*">
+                            <p id="companyError" class="error" style="display:none;"></p>
+                            <input type="email" name="contact_email" class="form-control" id="email-invalid" placeholder="Email*">
+                            <p id="mailError" class="error" style="display:none;"></p>
+                            <input type="text" name="contact_phone" class="form-control" id="contact_no" placeholder="Contact*">
+                            <p id="contactError" class="error" style="display:none;"></p>
+                            <input type="text" name="designation" class="form-control" id="designation" placeholder="Designation*">
+                            <p id="designationError" class="error" style="display:none;"></p>
+                            <textarea name="comment" id="comment" class="form-control" placeholder="Comment*" rows="3" cols="5"></textarea>
+                            <p id="commentError" class="error" style="display:none;"></p>
+                            <div>
+                                <input type="submit" value="Submit" style="margin-top:16px;text-align:center;">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div style="display:none;" id="thankyou_message">
+                <h2><em>Thanks</em> for contacting us! We will get back you soon</h2>
+            </div>
+            <h1>Our offices</h1>
+            <div class="row" style="padding-top:25px;">
+                <div class="col-md-3 text-center ">
+                    <div class="officeAddress">
+                        <h4>US</h4>
+                        <p>Symbiosis Staffing Solutions LLC.<br> 1603 Capitol Ave., Suite 310 A411, Cheyenne, Wyoming - 82001.
+                            <br> Tel +1 307-222-2805<br> Fax: +1 307-222-7228<br>
+                        </p>
+                    </div>
+                    <div class="officeAddress">
+                        <h4>Bangalore</h4>
+                        <p>Symbiosis Network Pvt. Ltd.<br> #541, 2nd Floor, 5th Main, 16th Cross, Indiranagar 2nd Stage, Bangalore
+                            - 38.<br> Tel +91 80-42743030 / 41 / 44 / 49
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="map-container">
+                        <div class="googleMap">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.8678335499303!2d77.63285991437535!3d12.980304090850137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae16afa48cf721%3A0xea68e99412ec953e!2sSymbiosis+Network+Pvt+Ltd!5e0!3m2!1sen!2sin!4v1501043930319"
+                                width="100%" height="340" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <div class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="about col-md-4">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="about">About Us</a></li>
+                        <li><a href="services">Services</a></li>
+                        <li><a href="career">Careers</a></li>
+                        <li><a href="industry">Industry Focus</a></li>
+                        <li><a href="blog">Blog</a></li>
+                        <li><a href="contact">Contact</a></li>
+                    </ul>
+
+                </div>
+                <div class="contact col-md-6">
+                    <h3>Contact us</h3>
+                    <div class="contact-icon col-md-6" style="padding:0px;">
+                        <ul style="padding:0px;">
+                            <li><i class="fa fa-map-marker" aria-hidden="true"></i><b>US</b> - 1603 Capitol Ave.,
+                                <span>Suite 310 A411, Cheyenne, </span><span>Wyoming - 82001.</span></li>
+                            <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+13072222805">+1 307-222-2805</a>                                <span> Fax: <a href="fax:+13072227228">+1 307-222-7228</a></span></li>
+                            <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info@symbiosisstaffing.com">info@symbiosisstaffing.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="contact-icon col-md-6">
+                        <ul style="padding:0px;">
+                            <li><i class="fa fa-map-marker" aria-hidden="true"></i><b>India</b> - #541, 2nd Floor,
+                                <span>5th Main, 16th Cross,</span><span>Indiranagar 2nd Stage, </span><span>Bangalore - 38.</span></li>
+                            <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+918042743030">+91 80-42743030/ 41/ 44/ 49</a></li>
+                            <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info@symbiosisstaffing.com">info@symbiosisstaffing.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                Copyright @ 2017
+                <a href="#">Symbiosis Networks</a>
+            </div>
+        </div>
+    </div>
+    <!-- <script data-cfasync="false" type="text/javascript" src="javascripts/form-submission-handler.js"></script> -->
+</body>
+<script>
+    // pop up form
+    var form = document.getElementById('upload');
+    var button = document.getElementById('resume');
+    var span = document.getElementsByClassName("close")[0];
+    button.onclick = function () {
+        form.style.display = "block";
+    }
+    span.onclick = function () {
+        form.style.display = "none";
+    }
+    Window.onclick = function (event) {
+        if (event.target == form) {
+            form.style.display = "none";
+        }
+    }
+
+</script>
